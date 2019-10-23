@@ -1270,7 +1270,7 @@ html[dir="ltr"] .nav .content .options .myCart {
 .banner img {
   position: fixed;
   left: 0;
-  top: 155px;
+  top: 0;
   width: 100%;
   height: 575px;
 }

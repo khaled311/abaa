@@ -47,8 +47,8 @@ $(function() {
   //     img = document.querySelector("#barallax1 img");
   //   img.style.top = ypos * 1 + "px";
   // });
-  $("#barallax1 img").css("top", $("#nav").innerHeight());
-  $("body").css("padding-top", $("#nav").innerHeight());
+  $("#barallax1").css("top", $("#nav").innerHeight());
+  // $("body").css("padding-top", $("#nav").innerHeight());
 
   $(window).on("resize", function(){
     $("#barallax1 img").css("top", $("#nav").innerHeight());
