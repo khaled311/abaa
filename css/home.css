@@ -209,8 +209,8 @@ ul.res {
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
