@@ -1267,11 +1267,14 @@ html[dir="ltr"] .nav .content .options .myCart {
   overflow: hidden;
 }
 
-.banner img {
+.banner a {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.banner img {
   height: 575px;
 }
 
