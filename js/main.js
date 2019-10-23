@@ -50,6 +50,11 @@ $(function() {
   $("#barallax1 img").css("top", $("#nav").innerHeight());
   $("body").css("padding-top", $("#nav").innerHeight());
 
+  $(window).on("resize", function(){
+    $("#barallax1 img").css("top", $("#nav").innerHeight());
+    $("body").css("padding-top", $("#nav").innerHeight());
+  })
+
   // Nav
   $(window).on("scroll", function() {
     if($(window).scrollTop() >= 100){
