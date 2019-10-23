@@ -45,7 +45,7 @@ $(function() {
   function parallax() {
     var ypos = window.pageYOffset,
       img = document.querySelector("#barallax1 img");
-    img.style.top = ypos * 0.7 + "px";
+    img.style.top = ypos * 1 + "px";
   }
 
   $("body").css("padding-top", $("#nav").innerHeight());
