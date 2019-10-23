@@ -42,14 +42,13 @@ $(function() {
   });
 
   // Parallax Effect
-  function parallax() {
-    var ypos = window.pageYOffset,
-      img = document.querySelector("#barallax1 img");
-    img.style.top = ypos * 1 + "px";
-  }
-
+  // $(window).on("scroll", function() {
+  //   var ypos = window.pageYOffset,
+  //     img = document.querySelector("#barallax1 img");
+  //   img.style.top = ypos * 1 + "px";
+  // });
+  // $("#barallax1 img").css("top", "0");
   $("body").css("padding-top", $("#nav").innerHeight());
-  $(window).on("scroll", parallax);
 
   $(window).on("scroll", function() {
     if($(window).scrollTop() >= 100){
