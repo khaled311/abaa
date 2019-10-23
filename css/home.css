@@ -1,7 +1,7 @@
 html {
   overflow-y: hidden;
   scrollbar-width: thin;
-  scrollbar-color: #35c1d5 #e97725;
+  scrollbar-color: #35c1d5 #818485;
 }
 
 html::-webkit-scrollbar {
@@ -9,7 +9,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background-color: #E97725;
+  background-color: #818485;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -319,11 +319,6 @@ html[dir="ltr"] .menuTriger {
   top: 18px;
   left: 18px;
   cursor: pointer;
-}
-
-html[dir="ltr"] .navover .program .popClose {
-  left: unset;
-  right: 18px;
 }
 
 @media (max-width: 375px) {
@@ -832,11 +827,17 @@ html[dir="ltr"] .sideNav > ul > li i {
   width: 100%;
   z-index: 99;
   background-color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .nav.scrolled {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav.hidee {
+  top: -100%;
 }
 
 .nav .content {
@@ -1073,8 +1074,8 @@ html[dir="ltr"] .nav .content .navLinks ul li:not(:last-child) {
 
 @media (min-width: 992px) {
   .nav .content .navLinks ul li.active:after {
-    -webkit-transform: translateY(31px);
-            transform: translateY(31px);
+    -webkit-transform: translateY(38px);
+            transform: translateY(38px);
   }
 }
 
@@ -1099,8 +1100,8 @@ html[dir="ltr"] .nav .content .navLinks ul li:not(:last-child) {
 
 @media (min-width: 992px) {
   .nav .content .navLinks ul li:hover:after {
-    -webkit-transform: translateY(31px);
-            transform: translateY(31px);
+    -webkit-transform: translateY(38px);
+            transform: translateY(38px);
   }
 }
 
@@ -1266,8 +1267,28 @@ html[dir="ltr"] .nav .content .options .myCart {
   overflow: hidden;
 }
 
+.banner img {
+  position: fixed;
+  left: 0;
+  top: 155px;
+  width: 100%;
+  height: 575px;
+}
+
+@media (min-width: 1400px) {
+  .banner {
+    height: 750px;
+  }
+  .banner img {
+    height: 750px;
+  }
+}
+
 @media (max-width: 991px) {
   .banner {
+    height: 400px;
+  }
+  .banner img {
     height: 400px;
   }
 }
@@ -1276,10 +1297,16 @@ html[dir="ltr"] .nav .content .options .myCart {
   .banner {
     height: 300px;
   }
+  .banner img {
+    height: 300px;
+  }
 }
 
 @media (max-width: 600px) {
   .banner {
+    height: 250px;
+  }
+  .banner img {
     height: 250px;
   }
 }
@@ -1288,14 +1315,9 @@ html[dir="ltr"] .nav .content .options .myCart {
   .banner {
     height: 180px;
   }
-}
-
-.banner img {
-  position: fixed;
-  left: 0;
-  top: 155px;
-  width: 100%;
-  height: 100%;
+  .banner img {
+    height: 180px;
+  }
 }
 
 .main {

@@ -47,15 +47,25 @@ $(function() {
   //     img = document.querySelector("#barallax1 img");
   //   img.style.top = ypos * 1 + "px";
   // });
-  // $("#barallax1 img").css("top", "0");
+  $("#barallax1 img").css("top", $("#nav").innerHeight());
   $("body").css("padding-top", $("#nav").innerHeight());
 
+  // Nav
   $(window).on("scroll", function() {
     if($(window).scrollTop() >= 100){
       $("#nav").addClass("scrolled");
     }
     else{
       $("#nav").removeClass("scrolled");
+    }
+  });
+
+  // Navbar Effect On Scroll
+  var zero = 0;
+  $(window).on('scroll', function() {
+    if($(window).scrollTop() >= $(".main").offset().top){
+      $("#nav").toggleClass('hidee', $(window).scrollTop() > zero);
+      zero = $(window).scrollTop();
     }
   });
 
@@ -149,4 +159,7 @@ $(function() {
       link.classList.toggle("fade");
     });
   });
+
+  // Animation On Scroll
+  AOS.init();
 });
