@@ -453,6 +453,7 @@ html[dir="ltr"] .navover .program .details {
   border: 1px solid #E5E4E2;
   padding: 0 24px;
   color: #a4a4a4;
+  background-color: #F6F6F6;
   font-size: 14px;
   -webkit-transition: .5s;
   transition: .5s;
