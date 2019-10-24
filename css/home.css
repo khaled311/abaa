@@ -21,6 +21,13 @@ body {
   font-family: 'it', sans-serif;
   overflow-x: hidden;
   height: auto;
+  padding-top: 155px;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 123.2px;
+  }
 }
 
 * {
@@ -321,7 +328,7 @@ html[dir="ltr"] .menuTriger {
   cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .navover .program .popClose {
     top: 12px;
     left: 50%;
@@ -346,7 +353,7 @@ html[dir="ltr"] .menuTriger {
   height: 252px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .navover .program .pic {
     margin-top: 40px;
   }
@@ -483,7 +490,7 @@ html[dir="ltr"] .navover .program .details {
   color: #a4a4a4;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .navover .program .donation input {
     margin: 0;
     margin-left: 12px;
@@ -527,6 +534,15 @@ html[dir="ltr"] .navover .program .details {
   }
 }
 
+@media (max-width: 480px) {
+  .navover .program .actions {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
 @media (max-width: 375px) {
   .navover .program .actions {
     -webkit-box-orient: vertical !important;
@@ -539,6 +555,13 @@ html[dir="ltr"] .navover .program .details {
 @media (max-width: 600px) {
   .navover .program .amout {
     margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navover .program .amout {
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
   }
 }
 
@@ -1271,7 +1294,7 @@ html[dir="ltr"] .nav .content .options .myCart {
 .banner a {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 155px;
   width: 100%;
 }
 
@@ -1317,16 +1340,17 @@ html[dir="ltr"] .nav .content .options .myCart {
 
 @media (max-width: 480px) {
   .banner {
-    height: 303px;
+    height: 180px;
   }
   .banner a {
     height: 180px;
-    top: 123px;
+    top: 123.2px;
   }
 }
 
 .banner img {
   height: 100%;
+  width: 100%;
 }
 
 .main {
