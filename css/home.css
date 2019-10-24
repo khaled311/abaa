@@ -1464,7 +1464,8 @@ html[dir="ltr"] .program .details {
   margin: 0;
   color: #818485;
   display: block;
-  margin-bottom: 10px;
+  line-height: 1;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 375px) {
