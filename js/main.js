@@ -48,11 +48,11 @@ $(function() {
   //   img.style.top = ypos * 1 + "px";
   // });
   $("#barallax1 a").css("top", $("#nav").innerHeight());
-  $("body").css("padding-top", $("#nav").innerHeight());
+  // $("body").css("padding-top", $("#nav").innerHeight());
 
   $(window).on("resize", function(){
     $("#barallax1 a").css("top", $("#nav").innerHeight());
-    $("body").css("padding-top", $("#nav").innerHeight());
+    // $("body").css("padding-top", $("#nav").innerHeight());
   })
 
   // Nav
