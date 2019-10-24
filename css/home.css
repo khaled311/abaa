@@ -240,35 +240,9 @@ html[dir="ltr"] .menuTriger {
   }
 }
 
-.menuTriger i {
-  color: #35C1D5;
-  font-size: 29px;
-}
-
-.menuTriger .line {
-  width: 25px;
-  height: 3px;
-  background: #FFF;
-  margin: 2px;
-  border-radius: 50px;
-}
-
-.menuTriger .hamburger {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.menuTriger span {
+  color: #FFF;
+  font-size: 30px;
 }
 
 .navover {
@@ -650,7 +624,7 @@ html[dir="ltr"] .sideNav.open {
 }
 
 .sideNav .options {
-  padding: 0 50px;
+  padding: 35px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,15 +652,12 @@ html[dir="ltr"] .sideNav.open {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
-  color: #818485;
+  color: #FFF;
   width: 30px;
-  height: 60px;
+  height: 30px;
   text-transform: uppercase;
   border-radius: 100px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 10px;
+  background-color: #818485;
 }
 
 .sideNav .options .close1 {
@@ -704,12 +675,8 @@ html[dir="ltr"] .sideNav.open {
       -ms-flex-pack: center;
           justify-content: center;
   width: 30px;
-  height: 60px;
+  height: 30px;
   border-radius: 100px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 10px;
 }
 
 .sideNav > ul {
@@ -839,6 +806,8 @@ html[dir="ltr"] .sideNav > ul > li i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
 }
 
 .sideNav .log .icon {
@@ -865,7 +834,6 @@ html[dir="ltr"] .sideNav > ul > li i {
 .sideNav .log .details {
   text-align: center;
   margin-top: 10px;
-  display: none;
 }
 
 .sideNav .log .details p:first-child {

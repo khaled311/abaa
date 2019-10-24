@@ -161,9 +161,9 @@ $(function() {
     });
   });
 
-  $("#drpDwnMob").on("click", function() {
-    $(".sideNav .details").slideToggle();
-  });
+  // $("#drpDwnMob").on("click", function() {
+  //   $(".sideNav .details").slideToggle();
+  // });
 
   // Animation On Scroll
   AOS.init();
