@@ -1453,6 +1453,12 @@ html[dir="ltr"] .program .details {
   padding-left: 25px;
 }
 
+@media (max-width: 375px) {
+  html[dir="ltr"] .program .details {
+    padding-left: 0;
+  }
+}
+
 .program .details a {
   font-size: 18px;
   margin: 0;
