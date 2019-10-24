@@ -57,13 +57,30 @@ $(function() {
 
   // Nav
   $(window).on("scroll", function() {
-    if($(window).scrollTop() >= 100){
-      $("#nav").addClass("scrolled");
+    if($(window).scrollTop() >= ($("#parallax2").offset().top) + 100){
+      $("#nav").addClass("scrolled fixed");
+      $("body").css("padding-top", $("#nav").innerHeight());
     }
     else{
-      $("#nav").removeClass("scrolled");
+      $("#nav").removeClass("scrolled fixed");
+      $("body").css("padding-top", "0");
     }
   });
+
+  $(window).on("scroll", function() {
+    if($(window).scrollTop() >= $("#barallax1").offset().top){
+      $("#barallax1 a").css({
+        backgroundAttachment: "fixed",
+        backgroundSize: "contain"
+      });
+    }else{
+      $("#barallax1 a").css({
+        backgroundAttachment: "initial",
+        backgroundSize: "100% 100%"
+      });
+    }
+  })
+
 
   // Navbar Effect On Scroll
   var zero = 0;
@@ -108,27 +125,6 @@ $(function() {
     }
   });
 
-  //footer accordion
-  if ($(window).width() < 992) {
-    $(".foot-links button").attr("data-toggle", "collapse");
-  }
-
-  $(".foot-links button").on("click", function() {
-    $(this).toggleClass("trans");
-    $(this)
-      .parent()
-      .parent()
-      .siblings()
-      .find(".collapse")
-      .collapse("hide");
-    $(this)
-      .parent()
-      .parent()
-      .siblings()
-      .find("button")
-      .removeClass("trans");
-  });
-
   // Preloder
   $(window).on("load", function() {
     $("html").css("overflow-y", "auto");
@@ -163,6 +159,10 @@ $(function() {
     links.forEach(link => {
       link.classList.toggle("fade");
     });
+  });
+
+  $("#drpDwnMob").on("click", function() {
+    $(".sideNav .details").slideToggle();
   });
 
   // Animation On Scroll
