@@ -47,13 +47,13 @@ $(function() {
   //     img = document.querySelector("#barallax1 img");
   //   img.style.top = ypos * 1 + "px";
   // });
-  $("#barallax1 a").css("top", $("#nav").innerHeight());
-  // $("body").css("padding-top", $("#nav").innerHeight());
+  // $("#barallax1 a").css("top", $("#nav").innerHeight());
+  // // $("body").css("padding-top", $("#nav").innerHeight());
 
-  $(window).on("resize", function(){
-    $("#barallax1 a").css("top", $("#nav").innerHeight());
-    // $("body").css("padding-top", $("#nav").innerHeight());
-  })
+  // $(window).on("resize", function(){
+  //   $("#barallax1 a").css("top", $("#nav").innerHeight());
+  //   // $("body").css("padding-top", $("#nav").innerHeight());
+  // })
 
   // Nav
   $(window).on("scroll", function() {

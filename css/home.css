@@ -1317,10 +1317,11 @@ html[dir="ltr"] .nav .content .options .myCart {
 
 @media (max-width: 480px) {
   .banner {
-    height: 180px;
+    height: 303px;
   }
   .banner a {
     height: 180px;
+    top: 123px;
   }
 }
 
