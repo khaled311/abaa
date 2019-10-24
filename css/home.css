@@ -1690,7 +1690,7 @@ html[dir="ltr"] .program .details .actions .cartBtn button span:first-child {
 footer {
   background-color: #808385;
   position: relative;
-  padding: 70px 0 50px;
+  padding: 65px 0 50px;
 }
 
 @media (max-width: 991px) {
@@ -1818,7 +1818,7 @@ footer .social a i:hover {
 }
 
 footer .payment {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 991px) {
