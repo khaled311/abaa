@@ -912,6 +912,12 @@ html[dir="ltr"] .sideNav > ul > li i {
   }
 }
 
+@media (max-width: 320px) {
+  .nav .content .logo img {
+    width: 180px;
+  }
+}
+
 .nav .content .topBar {
   position: absolute;
   left: 0;
